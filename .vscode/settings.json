@@ -3,6 +3,6 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "editor.mouseWheelZoom": true,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "window.zoomPerWindow": false
 }
