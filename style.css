@@ -2,18 +2,19 @@ body {
   padding: 0;
   margin: 0;
 }
+
 header {
   background-color: #f8f9fa;
   padding: 10px;
   box-shadow: 0 2px 12px black;
-   position: sticky;
+  position: sticky;
   top: 0;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
- 
+
 }
 
 .logo {
@@ -42,9 +43,10 @@ nav ul li a {
 nav ul li a:hover {
   color: #34b7a7;
 }
-nav ul li a:focus{
-    color: #34b7a7;
-    text-decoration: underline;
+
+nav ul li a:focus {
+  color: #34b7a7;
+  text-decoration: underline;
 }
 
 .icon-section {
@@ -56,8 +58,9 @@ nav ul li a:focus{
 .icon-section i {
   font-size: 1.5rem;
 }
+
 .hero-section {
-    padding-top: 200px;
+  padding-top: 200px;
   background-image: url("images/home/hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -92,6 +95,7 @@ nav ul li a:focus{
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
+
 .hero-section button a {
   color: #fff;
   text-decoration: none;
@@ -105,19 +109,20 @@ nav ul li a:focus{
 
 /* About section Design */
 
-.section-title{
-    font-size: 1.6rem;
-    text-align: center;
+.section-title {
+  font-size: 1.6rem;
+  text-align: center;
 
-    position: relative;
+  position: relative;
 }
 
-.section-title + p{
+.section-title+p {
   text-align: center;
   font-size: 1.2rem;
 }
-.section-title:after{
-  content:"";
+
+.section-title:after {
+  content: "";
   height: 3px;
   width: 50px;
   background-color: #299999;
@@ -129,64 +134,86 @@ nav ul li a:focus{
 
 }
 
-.about-info-container{
-    display: flex;
- 
-    justify-content: center;
-    gap: 20px;
+.about-info-container {
+  display: flex;
+
+  justify-content: center;
+  gap: 20px;
 }
+
 .skills-container {
   display: flex;
   justify-content: space-between;
   padding: 10px 25px;
+  gap: 15px;
 }
-.skills .skill span{
+
+.skills .skill span {
   position: absolute;
   top: -30px;
 }
-.skills .skill span:nth-child(2){
+
+.skills .skill span:nth-child(2) {
   left: 100%;
   transform: translateX(-100%);
 }
-.skills .skill{
+
+.skills {
+  width: 100%;
+}
+
+.skills .skill:after {
+  width: 75%;
+  height: 15px;
+  background-color: blue;
+  content: "";
+}
+
+.skills .skill {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 600px;
   height: 15px;
   background-color: #299999;
   margin-bottom: 50px;
 }
-.about-info-container img{
-    border-radius: 7px;
-    height: 300px;
-    transition: transform 0.3s;
+
+.about-info-container img {
+  border-radius: 7px;
+  height: 300px;
+  transition: transform 0.3s;
 }
-.about-info-container img:hover{
+
+.about-info-container img:hover {
   transform: scale(1.01);
 }
-.about-info-container ul{
-display: flex;
-    list-style-type: none;
-    justify-content: space-between;
+
+.about-info-container ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
 }
-.about-info-container ul li{
-    font-size: 1.5rem;
-    color: #333;
-    padding-bottom: 22px;
+
+.about-info-container ul li {
+  font-size: 1.5rem;
+  color: #333;
+  padding-bottom: 22px;
 }
-.about-info-container ul li i{
+
+.about-info-container ul li i {
   font-size: 1.2rem;
   margin-right: 2px;
   color: #34b7a7;
 }
-.about-info-container ul li span{
+
+.about-info-container ul li span {
   font-weight: 800;
 }
-.about-info-container p{
+
+.about-info-container p {
   font-size: 1.5rem;
   color: #333;
- font-style: italic;
+  font-style: italic;
   margin-bottom: 20px;
 }
 
@@ -194,12 +221,13 @@ display: flex;
 footer {
   background: #e9e8e6;
   display: flex;
-   font-size: 2rem;
+  font-size: 2rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 50px;
 }
+
 .footer-icon-section {
   display: flex;
   gap: 1rem;
@@ -207,6 +235,7 @@ footer {
   justify-content: center;
   margin-bottom: 20px;
 }
+
 .footer-icon-section i {
   font-size: 2rem;
   border: 1px solid #333;
@@ -214,4 +243,3 @@ footer {
   padding: 13px;
   cursor: pointer;
 }
-
