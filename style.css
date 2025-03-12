@@ -305,6 +305,85 @@ T 10 50 Z → ওয়েভ বন্ধ করা */
   color: #666;
   line-height: 1.5;
 }
+/* contact section start */
+ .contact-content-section{
+  display: flex;
+  justify-content: center;
+gap: 20px;
+
+ }
+
+ .contact-content-section .maps-section{
+  padding: 30px;
+  border-radius: 7px;
+  box-shadow: 0 0 15px rgb(222, 208, 208);
+ }
+
+ .contact-content-section .location{
+display: flex;
+align-items: center;
+
+ 
+ }
+ 
+.contact-content-section .location i{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #c5c5c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  font-size: 24px;
+  color: #34b7a7;
+  margin-right: 10px;
+ }
+.contact-content-section .location i:hover{
+  background: #34b7a7;
+  color: white;
+}
+
+.contact-content-section .form-section{
+  padding: 30px;
+  border-radius: 7px;
+  box-shadow: 0  0 15px rgb(222, 208, 208);
+
+}
+.contact-content-section .form-section form label{
+  margin-bottom: 12px;
+}
+.contact-content-section .form-section div{
+  width: 100%;
+  display: flex;
+  margin: 0 5px 0 0;
+
+gap: 25px;
+}
+.contact-content-section .form-section label input{
+padding: 22px 10px; 
+  width: 100%;
+}
+
+.contact-content-section .form-section label  .subject,
+ .contact-content-section .form-section  label textarea{
+padding: 22px 10px;
+  width: 100%;
+
+}
+
+.contact-content-section .form-section  button[type="submit"]{
+  padding: 10px 20px;
+  background: #34b7a7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+
+/* contact sectin end */
+
+
 
 /* Foooter section design */
 footer {
