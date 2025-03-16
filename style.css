@@ -9,6 +9,7 @@ header {
   box-shadow: 0 2px 12px black;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 nav {
@@ -72,6 +73,38 @@ nav ul li a:focus {
 .section {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+/* Drop Down part */
+
+.dropDown-menu {
+  position: relative;
+}
+
+.dropDown-menu ul {
+  position: absolute;
+  width: 200px;
+  background: #eff5f5;
+  padding: 5px 22px;
+  border-radius: 5px;
+ display: flex;
+  top: 100%;
+opacity: 0
+;
+  flex-direction: column;
+}
+/* snake */
+.dropDown-menu ul li {
+  margin-bottom: 10px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+  font-weight: 400;
+}
+
+#dropDown:hover ul {
+  display: flex;
+  opacity: 1;
+
 }
 
 .hero-section {
@@ -305,28 +338,29 @@ T 10 50 Z → ওয়েভ বন্ধ করা */
   color: #666;
   line-height: 1.5;
 }
+
 /* contact section start */
- .contact-content-section{
+.contact-content-section {
   display: flex;
   justify-content: center;
-gap: 20px;
+  gap: 20px;
 
- }
+}
 
- .contact-content-section .maps-section{
-  padding: 30px;
+.contact-content-section .maps-section {
+  padding: 12px 30px;
   border-radius: 7px;
   box-shadow: 0 0 15px rgb(222, 208, 208);
- }
+}
 
- .contact-content-section .location{
-display: flex;
-align-items: center;
+.contact-content-section .location {
+  display: flex;
+  align-items: center;
 
- 
- }
- 
-.contact-content-section .location i{
+
+}
+
+.contact-content-section .location i {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -338,41 +372,45 @@ align-items: center;
   font-size: 24px;
   color: #34b7a7;
   margin-right: 10px;
- }
-.contact-content-section .location i:hover{
+}
+
+.contact-content-section .location i:hover {
   background: #34b7a7;
   color: white;
 }
 
-.contact-content-section .form-section{
+.contact-content-section .form-section {
   padding: 30px;
   border-radius: 7px;
-  box-shadow: 0  0 15px rgb(222, 208, 208);
+  box-shadow: 0 0 15px rgb(222, 208, 208);
 
 }
-.contact-content-section .form-section form label{
+
+.contact-content-section .form-section form label {
   margin-bottom: 12px;
 }
-.contact-content-section .form-section div{
+
+.contact-content-section .form-section div {
   width: 100%;
   display: flex;
   margin: 0 5px 0 0;
 
-gap: 25px;
+  gap: 25px;
 }
-.contact-content-section .form-section label input{
-padding: 22px 10px; 
+
+.contact-content-section .form-section label input {
+  padding: 22px 10px;
   width: 100%;
 }
 
-.contact-content-section .form-section label  .subject,
- .contact-content-section .form-section  label textarea{
-padding: 22px 10px;
+.contact-content-section .form-section label .subject,
+.contact-content-section .form-section label textarea {
+  padding: 22px 10px;
   width: 100%;
 
 }
 
-.contact-content-section .form-section  button[type="submit"]{
+.contact-content-section .form-section button[type="submit"] {
   padding: 10px 20px;
   background: #34b7a7;
   color: white;
@@ -380,10 +418,54 @@ padding: 22px 10px;
   border-radius: 5px;
 }
 
+.contact-content-section .form-section button[type="submit"]:hover {
+  background: #15d2bc;
+  color: white;
+  cursor: pointer;
+}
+
 
 /* contact sectin end */
 
+/* resume section start */
 
+.resume-information {
+  text-align: center;
+}
+
+.red-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 10%;
+}
+
+.red-container>div {
+  flex: 1;
+}
+
+.border-left {
+  border-left: 2px solid #34b7a7;
+  padding-left: 30px;
+}
+
+.border-left>div {
+  position: relative;
+}
+
+.border-left>div>p:nth-child(1):before {
+  content: "";
+  border-radius: 50%;
+  border: 3px solid #34b7a7;
+  position: absolute;
+  left: -37px;
+  top: 0px;
+
+  padding: 5px;
+  background-color: white;
+
+}
+
+/* resume section end */
 
 /* Foooter section design */
 footer {
@@ -410,4 +492,11 @@ footer {
   border-radius: 50%;
   padding: 13px;
   cursor: pointer;
+}
+
+
+
+/* Portofolio section Css */
+.portofolio-section {
+  columns: 3 450px;
 }
