@@ -507,7 +507,7 @@ footer {
   column-count: 3;
 }
 
-.portofolio-section>.columns-container>div {
+.portofolio-section>.columns-container>.card {
   margin-bottom: 20px;
 }
 
@@ -519,8 +519,8 @@ footer {
   position: relative;
 }
 
-.portofolio-section .card:hover>div {
-  display: flex;
+.portofolio-section .card:hover .hidden-section {
+  transform: scaleY(1);
 }
 
 .portofolio-section .card .hidden-section {
@@ -533,8 +533,11 @@ footer {
   width: 100%;
   z-index: 1000;
   bottom: 0;
-  display: none;
-  transition: 0.3s;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: 0.25s;
+
+
 }
 
 .portofolio-section .card .hidden-section i {
