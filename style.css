@@ -87,12 +87,12 @@ nav ul li a:focus {
   background: #eff5f5;
   padding: 5px 22px;
   border-radius: 5px;
- display: flex;
+  display: flex;
   top: 100%;
-opacity: 0
-;
+  opacity: 0;
   flex-direction: column;
 }
+
 /* snake */
 .dropDown-menu ul li {
   margin-bottom: 10px;
@@ -498,5 +498,45 @@ footer {
 
 /* Portofolio section Css */
 .portofolio-section {
-  columns: 3 450px;
+  max-width: 1400px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.portofolio-section>.columns-container {
+  column-count: 3;
+}
+
+.portofolio-section>.columns-container>div {
+  margin-bottom: 20px;
+}
+
+.portofolio-section .card img {
+  width: 100%;
+}
+
+.portofolio-section .card {
+  position: relative;
+}
+
+.portofolio-section .card:hover>div {
+  display: flex;
+}
+
+.portofolio-section .card .hidden-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.6em;
+  background: white;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  bottom: 0;
+  display: none;
+  transition: 0.3s;
+}
+
+.portofolio-section .card .hidden-section i {
+  font-size: 2em;
 }
