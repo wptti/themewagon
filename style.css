@@ -10,11 +10,15 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+
+
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
 
 }
 
@@ -37,6 +41,7 @@ nav {
 
 nav ul {
   display: flex;
+
   list-style-type: none;
 }
 
@@ -543,3 +548,113 @@ footer {
 .portofolio-section .card .hidden-section i {
   font-size: 2em;
 }
+
+/* Menu design */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: none;
+  background-color: #d9d9d9;
+}
+
+input[name="mobile-menu"] {
+  display: none;
+}
+
+#menu-on:checked~.popup,
+#menu-on:checked~label {
+  display: block;
+}
+
+#menu-off:checked~.popup,
+#menu-off:checked~label {
+  display: none;
+}
+
+.mobile-nav-control .mobile-menu-close,
+.mobile-nav-control .mobile-menu-open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  display: none;
+}
+
+.mobile-nav-control label {
+  background-color: #15d2bc;
+  padding: 20px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+/* Mobile view */
+.menu-bar {
+  display: flex;
+  align-items: center;
+
+}
+
+.menu-bar i {
+  margin-right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* navbar for for mobile */
+
+/* Responsive code gose here */
+@media only screen and (max-width: 800px) {
+  header {
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  nav ul li:hover {
+    background: #f3ebeb;
+    color: #15d2bc;
+  }
+
+  .icon-section {
+    display: none;
+  }
+
+  .mobile-nav-control .mobile-menu-open {
+    display: block;
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .icon-section {
+    display: none;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {}
+
+/* Navabr responsive code  */
